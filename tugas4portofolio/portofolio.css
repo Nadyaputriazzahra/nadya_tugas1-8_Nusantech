@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007acc;
+    padding: 10px 20px;
+    position: fixed; /* tambahkan properti ini */
+    top: 0; /* tambahkan properti ini */
+    left: 0; /* tambahkan properti ini */
+    width: 100%; /* tambahkan properti ini */
+    z-index: 1000;  /* tambahkan properti ini */
+}
+
+
+
+header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    font-weight: bold; /* Menambah ketebalan font */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+a.active {
+    color: blue; /* Warna biru untuk tombol "Home" */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    background-color: #fff;
+    padding: 60px; /* Tambah padding untuk memperbesar card */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Menambah shadow agar card lebih menonjol */
+    max-width: 1000px; /* Mengatur lebar maksimum card */
+    margin: 0 auto; /* Agar card tetap berada di tengah */
+    
+}
+
+.profile-wrapper {
+    position: relative;  /* Untuk mengatur posisi elemen gambar dan background */
+    display: inline-block;  /* Agar elemen mengikuti konten gambar */
+}
+
+.background-element {
+    position: absolute;
+    top: 10px;  /* Menyesuaikan jarak antara background dan gambar */
+    left: 10px;
+    width: 220px;
+    height: 220px;
+    background-color: #007bff;  /* Warna elemen di belakang gambar */
+    border-radius: 15px;  /* Agar sudut elemen tidak tajam */
+    z-index: 1;  /* Elemen ini berada di bawah gambar */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);  /* Efek bayangan untuk elemen background */
+}
+
+.profile {
+    position: relative;
+    margin-top: 70px; 
+    z-index: 2;  /* Agar gambar berada di atas background */
+}
+
+.profile img {
+    width: auto;  /* Gambar mengikuti ukuran asli */
+    max-width: 200px;  /* Memberikan batas maksimum lebar gambar */
+    height: auto;  /* Mengatur tinggi otomatis sesuai aspek rasio */
+    object-fit: cover;  /* Agar gambar memenuhi container sesuai ukuran asli */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);  /* Efek bayangan untuk gambar profil */
+    border-radius: 15px;  /* Sudut gambar sesuai dengan elemen background */
+    z-index: 1;
+    position: relative; 
+}
+
+.content {
+    margin-left: 40px; /* Memberi jarak lebih besar antara gambar profil dan teks */
+    flex: 1; /* Agar teks mengambil lebih banyak ruang */
+}
+
+.content h2 {
+    font-size: 3rem; /* Memperbesar ukuran teks judul */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content h2 span {
+    color: #007bff;
+}
+
+.content p {
+    font-size: 1.2rem; /* Memperbesar ukuran teks deskripsi */
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons .btn {
+    padding: 12px 25px; /* Memperbesar tombol */
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.buttons .btn:hover {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Mengubah font seluruh halaman */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Terapkan font pada judul */
+    font-weight: 600; /* Untuk membuat judul lebih tebal */
+}
+
+p {
+    font-family: 'Poppins', sans-serif; /* Terapkan font pada teks paragraf */
+    font-weight: 400; /* Berat normal untuk teks */
+}
+

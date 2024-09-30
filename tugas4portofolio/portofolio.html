@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Info - Portfolio</title>
+        <link rel="stylesheet" href="portofolio.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>portofolio</h1>
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="./portofolio.html" class="active">Home</a></li>
+                        <li><a href="#personal-info">About</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="./portofolio.html" class="active">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./work.html">Work</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                    <li><a href="./rivews.html">Reviews</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header> -->
+
+
+
+        <section class="main">
+            <div class="profile">
+                <img src="beNAD.jpg" alt="Profile Image">
+            </div>
+            <div class="content">
+                <p>hello</p>
+                <h2>I'm Nadya Putri Azzahra <span>Web Designer</span></h2>
+                <p>saya merupakan siswi jurusan teknik komputer di SMKs Muhammadiyah 4 sukorejo,dan sedang dalam proses belajar untuk mengembangkan skill saya di bidang ini,saya yakin saya bisa berkembang karna saya berusaha.</p>
+                <div class="buttons">
+                    <a href="#my-work" class="btn">My Work</a>
+                    <a href="#my-team" class="btn">my team</a>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .main {
+                margin-top: 60px; /* tambahkan properti ini */
+            }
+            .profile img {
+                z-index: 1; /* tambahkan properti ini */
+    position: relative; /* tambahkan properti ini */
+            }
+        </style>
+
+         <!-- Bagian "My Team" -->
+         <section class="my-team" id="my-team">
+            <h2>My Team</h2>
+            <div class="team-container">
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/a5/ed/17/a5ed17c313eedfeba18dbcbe6dc08c55.jpg" alt="Anggota Tim 1">
+                    <h3>Natasya</h3>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/4c/0e/be/4c0ebe9b3576ea332e9363978b4b5b1b.jpg" alt="Anggota Tim 2">
+                    <h3>Jesica</h3>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/b8/0e/0e/b80e0ec9e10140d3530c3df6f5041655.jpg" alt="Anggota Tim 3">
+                    <h3>eveline</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <style>
+        /* Gaya untuk Bagian My Team */
+        body,html {
+        margin: 0;
+            padding: 0;
+            height: 100%;
+            
+        }
+        .container {
+            width: 100%;
+        }
+
+        .my-team {
+            text-align: center;
+            position: relative;
+            min-height: 100vh;
+            height: 100vh; /* Membuat bagian ini memenuhi layar */
+            color: white;
+            padding-top: 150px;
+        }
+        
+        .my-team h2 {
+            font-size: 30px;
+            color: #007acc; /* Warna biru untuk judul */
+            margin-bottom: 40px;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .team-background {
+            background-color: #007acc; /* Warna biru muda untuk latar belakang seluruh layar */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background-color: #e0f7fa; /* Warna biru muda untuk card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Efek zoom saat card di-hover */
+        }
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: #007acc; /* Warna biru untuk nama anggota */
+        }
+    </style>
+
+<section class="my-work" id="my-work">
+    <h2>My Work</h2>
+    <p class="det">Here are some examples of my projects and designs.</p>
+
+    <!-- Gallery Section in Card Format -->
+    <div class="work-container">
+        <div class="card">
+            <img src="roti.png" alt="Project 1">
+            <h3>halaman toko kue</h3>
+        </div>
+        <div class="card">
+            <img src="kall.png" alt="Project 2">
+            <h3>kallkulator</h3>
+        </div>
+        <div class="card">
+            <img src="cv.png" alt="Project 3">
+            <h3>cv nadya</h3>
+        </div>
+        <div class="card">
+            <img src="portfolio.png" alt="Project 4">
+            <h3>portfolio</h3>
+        </div>
+    </div>
+</section>
+<style>
+
+   /* Gaya untuk Bagian My Work */
+.my-work {
+    text-align: center;
+    position: relative;
+    padding-top: 150px; /* Sesuaikan untuk membuat bagian ini lebih ke atas */
+    margin-top: 150px; /* Geser halaman ke atas */
+    color: #007acc;
+    background-color: #c3d4f9; /* Warna background berbeda dari bagian sebelumnya */
+    padding-bottom: 50px; /* Tambahkan padding bawah untuk memberi ruang lebih */
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #e0f7fa; /* Warna biru muda untuk card */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efek zoom saat card di-hover */
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #007acc; /* Warna biru untuk nama project */
+}
+
+.det {
+    color: black;
+    margin-bottom: 30px;
+}
+
+
+</style>
+<section class="personal-info" id="personal-info">
+    <h2>Personal Information</h2>
+    <div class="profile">
+        <img src="beNAD.jpg" alt="Profile Photo" class="profile-pic">
+    </div>
+    <div class="info">
+        <p><strong>Name:</strong> Nadya Putri Azzahra</p>
+        <p><strong>Job Title:</strong> Web Designer & Developer</p>
+        <p><strong>Location:</strong> bangunsari,kendal</p>
+        <p><strong>Email:</strong> nadya@example.com</p>
+        <p><strong>Phone:</strong> +62 1xxxxxxxx</p>
+        <p><strong>Website/LinkedIn:</strong> <a href="https://linkedin.com/in/nadyaputri" target="_blank">linkedin.com/in/nadyaputri</a></p>
+        <p><strong>Summary:</strong></p>
+        <p>
+            Saya seorang desainer dan pengembang web yang bersemangat dengan pengalaman dalam membuat situs web modern dan responsif. Saat ini saya belajar Teknik Komputer di SMK Muhammadiyah 4 Sukorejo, saya bertujuan untuk lebih mengembangkan keterampilan dan keahlian saya dalam pengembangan web, dengan fokus pada memberikan pengalaman pengguna berkualitas tinggi. Saya yakin dengan kemampuan saya untuk tumbuh dan sukses melalui dedikasi dan pembelajaran berkelanjutan.
+        </p>
+    </div>
+</section>
+</div>
+
+<style>
+/* Basic styling for the personal information page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007acc;
+    padding: 10px 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.personal-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.personal-info h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #007acc;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.info strong {
+    color: #007acc;
+}
+
+.info a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+</style>
+    </div>
+
+    
+</body>
+</html>
